@@ -1,0 +1,371 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    background: linear-gradient(to bottom right, #4e54c8, #8f94fb); /* Gradient background */
+    color: #fff; /* Set text color to white */
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of other content */
+    background-color: #333; /* Background color for the sticky navbar */
+}
+
+/* Style for nav links */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Background color for the navbar */
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black;
+}
+/* Card styles for the Home section */
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-color: transparent; /* Background color for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin: 20px; /* Margin to separate from other sections */
+}
+
+.profile-pic {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    border: 5px solid #fff; /* Add a white border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+}
+
+#Home p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+/* Add this to your CSS */
+.education-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.education-item {
+    flex: 0 0 calc(50% - 20px);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    color:#333;
+}
+#education h2{
+    text-align: center;
+}
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+/* Section styles */
+.section {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.skills-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #4e54c8, #8f94fb); /* Gradient background */
+    opacity: 0.9; /* Adjust opacity as needed */
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.skill {
+    width: 200px;
+    margin: 20px;
+}
+
+.skill h3 {
+    margin-bottom: 10px;
+}
+
+.skill-level {
+    width: 100%;
+    height: 20px;
+    background-color: #ffc107; /* Default color for progress bars */
+    border-radius: 10px;
+    animation: animateSkill 2s ease forwards;
+}
+
+@keyframes animateSkill {
+    from { width: 0; }
+}
+#projects {
+    padding: 50px 0;
+}
+#projects h2{
+    text-align: center;
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+/* Add your CSS styles here */
+
+#resume {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-description {
+    flex: 1;
+    padding: 20px;
+}
+
+.resume-description p {
+    font-size: 1.1rem;
+}
+
+.resume-download {
+    flex: 1;
+}
+
+.resume-download button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resume-download button:hover {
+    background-color: #45a049;
+}
+/* Add your CSS styles here */
+
+#contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .profile-pic img {
+        width: 200px;
+        height: 200px;
+    }
+}
+.animated {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.animate {
+    opacity: 1;
+}
